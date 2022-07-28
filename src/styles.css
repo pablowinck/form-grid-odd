@@ -1,0 +1,19 @@
+* {
+  --gap: 20px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+  width: 75%;
+  padding: 20px;
+}
+
+.table .item {
+  width: 100%;
+}
+
+.table .item:nth-child(2n + 1):last-child {
+  width: calc(200% + var(--gap));
+}
